@@ -1,0 +1,1 @@
+Feature: Adequate Shop Registration

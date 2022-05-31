@@ -65,4 +65,8 @@ public class RestAssuredUtilities {
         request.header("Content-Type", contentType);
     }
 
+    public void addAuthorizationHeader(String token){
+        request.header("Authorization", "Bearer " + token);
+    }
+
 }

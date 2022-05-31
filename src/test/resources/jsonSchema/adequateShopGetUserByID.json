@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "id",
+    "name",
+    "email",
+    "profilepicture",
+    "location",
+    "createdat"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "default": 0,
+      "title": "The id Schema",
+      "examples": [
+        124855
+      ]
+    },
+    "name": {
+      "type": "string",
+      "default": "",
+      "title": "The name Schema",
+      "examples": [
+        "Developer132"
+      ]
+    },
+    "email": {
+      "type": "string",
+      "default": "",
+      "title": "The email Schema",
+      "examples": [
+        "Developer13231@gmail.com"
+      ]
+    },
+    "profilepicture": {
+      "type": "string",
+      "default": "",
+      "title": "The profilepicture Schema",
+      "examples": [
+        "http://restapi.adequateshop.com/Media//Images/userimageicon.png"
+      ]
+    },
+    "location": {
+      "type": "string",
+      "default": "",
+      "title": "The location Schema",
+      "examples": [
+        "USA"
+      ]
+    },
+    "createdat": {
+      "type": "string",
+      "default": "",
+      "title": "The createdat Schema",
+      "examples": [
+        "0001-01-01T00:00:00"
+      ]
+    }
+  },
+  "examples": [{
+    "id": 124855,
+    "name": "Developer132",
+    "email": "Developer13231@gmail.com",
+    "profilepicture": "http://restapi.adequateshop.com/Media//Images/userimageicon.png",
+    "location": "USA",
+    "createdat": "0001-01-01T00:00:00"
+  }]
+}

@@ -1,40 +1,86 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1653811558.json",
+  "title": "Root",
   "type": "object",
+  "required": [
+    "code",
+    "message",
+    "data"
+  ],
   "properties": {
     "code": {
-      "type": "integer"
+      "$id": "#root/code",
+      "title": "Code",
+      "type": "integer",
+      "examples": [
+        0
+      ],
+      "default": 0
     },
     "message": {
-      "type": "string"
+      "$id": "#root/message",
+      "title": "Message",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "success"
+      ],
+      "pattern": "^.*$"
     },
     "data": {
+      "$id": "#root/data",
+      "title": "Data",
       "type": "object",
-      "properties": {
-        "Id": {
-          "type": "integer"
-        },
-        "Name": {
-          "type": "string"
-        },
-        "Email": {
-          "type": "string"
-        },
-        "Token": {
-          "type": "string"
-        }
-      },
       "required": [
         "Id",
         "Name",
         "Email",
         "Token"
-      ]
+      ],
+      "properties": {
+        "Id": {
+          "$id": "#root/data/Id",
+          "title": "Id",
+          "type": "integer",
+          "examples": [
+            124870
+          ],
+          "default": 0
+        },
+        "Name": {
+          "$id": "#root/data/Name",
+          "title": "Name",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "Developer132"
+          ],
+          "pattern": "^.*$"
+        },
+        "Email": {
+          "$id": "#root/data/Email",
+          "title": "Email",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "Developer1323111@gmail.com"
+          ],
+          "pattern": "^.*$"
+        },
+        "Token": {
+          "$id": "#root/data/Token",
+          "title": "Token",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "df5c7c6d-8953-49aa-a1d4-3e5eb1e1b90b"
+          ],
+          "pattern": "^.*$"
+        }
+      }
     }
-  },
-  "required": [
-    "code",
-    "message",
-    "data"
-  ]
+
+  }
 }

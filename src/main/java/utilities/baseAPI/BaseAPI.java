@@ -12,10 +12,12 @@ public class BaseAPI {
     public static String baseURL = "";
     public static String testDataPath = "";
     public static String jsonSchemaPath = "";
+    public static String srcTestResources = "";
 
     public BaseAPI(){
-        testDataPath = properties.getProperty("test_date");
+        testDataPath = properties.getProperty("test_data");
         jsonSchemaPath = properties.getProperty("json_schema");
+        srcTestResources = properties.getProperty("src_test_resources");
 
         baseURL = properties.getProperty("base_url");
     }

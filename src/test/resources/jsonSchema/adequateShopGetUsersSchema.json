@@ -1,0 +1,133 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1653917750.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "page",
+    "per_page",
+    "totalrecord",
+    "total_pages",
+    "data"
+  ],
+  "properties": {
+    "page": {
+      "$id": "#root/page",
+      "title": "Page",
+      "type": "integer",
+      "examples": [
+        15
+      ],
+      "default": 0
+    },
+    "per_page": {
+      "$id": "#root/per_page",
+      "title": "Per_page",
+      "type": "integer",
+      "examples": [
+        10
+      ],
+      "default": 0
+    },
+    "totalrecord": {
+      "$id": "#root/totalrecord",
+      "title": "Totalrecord",
+      "type": "integer",
+      "examples": [
+        13911
+      ],
+      "default": 0
+    },
+    "total_pages": {
+      "$id": "#root/total_pages",
+      "title": "Total_pages",
+      "type": "integer",
+      "examples": [
+        1392
+      ],
+      "default": 0
+    },
+    "data": {
+      "$id": "#root/data",
+      "title": "Data",
+      "type": "array",
+      "default": [],
+      "items":{
+        "$id": "#root/data/items",
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "email",
+          "profilepicture",
+          "location",
+          "createdat"
+        ],
+        "properties": {
+          "id": {
+            "$id": "#root/data/items/id",
+            "title": "Id",
+            "type": "integer",
+            "examples": [
+              1496
+            ],
+            "default": 0
+          },
+          "name": {
+            "$id": "#root/data/items/name",
+            "title": "Name",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Aditya"
+            ],
+            "pattern": "^.*$"
+          },
+          "email": {
+            "$id": "#root/data/items/email",
+            "title": "Email",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "jainaj0987@gmail.com"
+            ],
+            "pattern": "^.*$"
+          },
+          "profilepicture": {
+            "$id": "#root/data/items/profilepicture",
+            "title": "Profilepicture",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "http://restapi.adequateshop.com/Media//Images/userimageicon.png"
+            ],
+            "pattern": "^.*$"
+          },
+          "location": {
+            "$id": "#root/data/items/location",
+            "title": "Location",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "USA"
+            ],
+            "pattern": "^.*$"
+          },
+          "createdat": {
+            "$id": "#root/data/items/createdat",
+            "title": "Createdat",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "2020-12-24T11:29:39.3593789"
+            ],
+            "pattern": "^.*$"
+          }
+        }
+      }
+
+    }
+  }
+}

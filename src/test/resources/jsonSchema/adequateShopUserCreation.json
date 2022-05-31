@@ -1,0 +1,76 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1653982800.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "email",
+    "profilepicture",
+    "location",
+    "createdat"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#root/id",
+      "title": "Id",
+      "type": "integer",
+      "examples": [
+        125194
+      ],
+      "default": 0
+    },
+    "name": {
+      "$id": "#root/name",
+      "title": "Name",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "traveler"
+      ],
+      "pattern": "^.*$"
+    },
+    "email": {
+      "$id": "#root/email",
+      "title": "Email",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "travele2r@gmail.com"
+      ],
+      "pattern": "^.*$"
+    },
+    "profilepicture": {
+      "$id": "#root/profilepicture",
+      "title": "Profilepicture",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "http://restapi.adequateshop.com/Media//Images/userimageicon.png"
+      ],
+      "pattern": "^.*$"
+    },
+    "location": {
+      "$id": "#root/location",
+      "title": "Location",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "USA"
+      ],
+      "pattern": "^.*$"
+    },
+    "createdat": {
+      "$id": "#root/createdat",
+      "title": "Createdat",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "2022-05-31T07:39:50.1471656Z"
+      ],
+      "pattern": "^.*$"
+    }
+  }
+}
